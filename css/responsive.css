@@ -1,0 +1,57 @@
+/* navbar starts here */
+@media (min-width: 992px){
+    nav {
+        box-shadow:none;
+    }
+}
+/* navbar ends here */
+
+/* hero section starts here */
+@media (min-width: 320px) and (max-width:991px){
+    #hero{
+        padding: 37px 0;
+    }
+    .hero_ctn {
+        margin-bottom: 40px;
+    }
+    .hero_ctn h4 {
+        font-size: 15px;
+    }
+    .hero_ctn h4 span {
+        margin-left: 10px;
+        font-size: 20px;
+    }
+    .hero_ctn h1 {
+        font-size: 34px;
+    }
+    .hero_ctn p {
+        font-size: 15px;
+    }
+        .button {
+            border-radius: 10px;
+            font-size: 14px;
+            padding: 8px 20px;
+        }
+        .button.outline_btn{
+            padding: 8px 7px;
+        }
+        .button span {
+            padding-left: 5px;
+            font-size: 14px;
+        }
+        .hero_ctn .button {
+            margin-right: 10px;
+        }
+        .follow_link p{
+            font-size: 16px;
+            padding-right: 16px;
+        }
+        .follow_link a {
+            font-size: 16px;
+            margin-right: 13px; 
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+        }
+}
+/* hero section ends here */

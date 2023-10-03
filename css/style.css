@@ -1,0 +1,150 @@
+/* common css start */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6,ul,ol,span,p{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --primeryFont: 'Poppins', sans-serif;
+    --secondryFont: 'PT Sans', sans-serif;
+    --primeryColor: #FC0;
+    --secondryColor: #353535;
+}
+body{
+    font-family: var(--primeryFont);
+}
+.button{
+    border-radius: 20px;
+    background: var(--primeryColor);
+    color: #FFF;
+    font-family: var(--primeryFont);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 180%; /* 36px */
+    padding: 16px 45px;
+    display: inline-block;
+}
+.button.outline_btn{
+    background-color: transparent;
+    border: 1px solid #000;
+    color: var(--secondryColor);
+    padding: 16px 18px;
+
+}
+.button span{
+    padding-left: 11px;
+    font-size: 18px;
+}
+
+/* common css end */
+
+/* navbar start here*/
+nav{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 16px !important;
+}
+#customeNav ul li a{
+    color: var(--secondryColor);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 200%;
+    padding: 18px 22px 5px;
+    display: inline-block;
+    text-transform: uppercase;
+    position: relative;
+}
+#customeNav ul li a::before{
+    content: '';
+    width: 0;
+    height: 1px;
+    background-color: var(--secondryColor);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.25s;
+}
+#customeNav ul li:hover a::before{
+    width: 100%;
+}
+nav .navbar-toggler{
+    border: none;
+}
+nav .navbar-toggler:focus{
+    box-shadow: none;
+}
+
+/* navbar end here*/
+
+/* hero section starts here*/
+#hero{
+    padding: 70px 0;
+}
+.hero_ctn h4{
+    color: var(--secondryColor);
+    font-family: var(--primeryFont);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: normal;
+}
+.hero_ctn h4 span{
+    margin-left: 38px;
+    font-size: 32px;
+    color: var(--primeryColor);
+}
+.hero_ctn h1{
+    color: var(--secondryColor);
+    font-family: var(--secondryFont);
+    font-size: 64px;
+    font-weight: 700;
+    line-height: normal;
+    padding: 15px 0 25px;
+}
+.hero_ctn p{
+    color: var(--secondryColor);
+    font-family: var(--primeryFont);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 180%; /* 36px */
+    padding-bottom: 45px;
+}
+
+.hero_ctn .button {
+    margin-right: 40px;
+}
+.follow_link{
+    padding-top: 65px;
+}
+.follow_link p{
+    color: var(--secondryColor);
+    font-family: var(--primeryFont);
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 180%; /* 39.6px */
+    display: inline-block;
+    padding-right: 32px;
+}
+.follow_link a {
+    font-size: 20px;
+    color: black;
+    width: 40px;
+    height: 40px;
+    background-color: #F4F3F3;
+    display: inline-block;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 16px;
+}
+
+/* hero section ends here*/
